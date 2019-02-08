@@ -1,10 +1,17 @@
 package ex91solution;
 
-import util.HibernateUtil;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.junit.*;
+import org.junit.Before;
+import org.junit.Test;
+
+import model.VideoRecording;
+import util.HibernateUtil;
 
 public class VideoDaoSearchTest {
 
@@ -21,6 +28,20 @@ public class VideoDaoSearchTest {
 	@Test(expected=NullPointerException.class)
 	public void testSearchAllNull() {
 		searcher.findVideos(session, null, null, null);
+	}
+
+	@Test
+	public void testSearchTitleOnly() {
+		List<VideoRecording> ret = searcher.findVideos(session, "Wunderful", null, null);
+		assertEquals(1, ret.size());
+		assertTrue(ret.get(0).getTitle().startsWith("Wunderful"));
+	}
+
+	@Test
+	public void testSearchPriceOnly() {
+		List<VideoRecording> ret = searcher.findVideos(session, null, null, 12.95);
+		assertEquals(1, ret.size());
+		assertEquals(9.99d, ret.get(0).getPrice(), 0.01d);
 	}
 
 }
