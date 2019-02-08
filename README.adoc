@@ -17,6 +17,7 @@ as we did yesterday for the jpademo project. Make sure "import projects" is chec
 	Note: You cannot run the Unit tests under Eclipse due to a version conflict.
 
 3. Open the file src/main/java/ex91/VideoDaoSearch.java.
+
    Complete the TODO steps in this file.
 
 4. Open the file src/test/java/VideoDaoSearchTest.java
