@@ -1,9 +1,9 @@
 = crs517add
 Stuff for Course 517 only.
 
-== ex91
+== ex91 Bonus
 
-Adds an exercise on the Criteria Query. Note that the API is now deprecated in favor of the JPA Criteria Query, as Hibernate
+An exercise on the Criteria Query. Note that the API is now deprecated in favor of the JPA Criteria Query, as Hibernate
 continues to morph itself into a JPA implementation.
 
 1. Use Eclipse to download this project from https://github.com/IanDarwin/crs517add,
