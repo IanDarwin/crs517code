@@ -14,7 +14,7 @@ as we did yesterday for the jpademo project. Make sure "import projects" is chec
 3. To ensure that tests work in the initial state of the project, right click on the project
 	in the Package Explorer and select Run As -> Maven Test.
 
-	Note: You cannot run the Unit tests under Eclipse due to a version conflict.
+	Note: Seems you can't run the Unit tests under the Eclipse JUnit runner due to a version conflict.
 
 3. Open the file src/main/java/ex91/VideoDaoSearch.java.
 
