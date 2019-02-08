@@ -38,6 +38,13 @@ public class VideoDaoSearchTest {
 	}
 
 	@Test
+	public void testSearchDirectorOnly() {
+		List<VideoRecording> ret = searcher.findVideos(session, null, "Sea", null);
+		assertEquals(1, ret.size());
+		assertTrue(ret.get(0).getTitle().equals("Rollaround Traveller"));
+	}
+
+	@Test
 	public void testSearchPriceOnly() {
 		List<VideoRecording> ret = searcher.findVideos(session, null, null, 12.95);
 		assertEquals(1, ret.size());
