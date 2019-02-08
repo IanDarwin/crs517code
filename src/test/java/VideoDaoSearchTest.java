@@ -1,5 +1,3 @@
-package ex91solution;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -12,6 +10,13 @@ import org.junit.Test;
 
 import model.VideoRecording;
 import util.HibernateUtil;
+
+
+//
+// TODO change the package part of this import to ex91
+//
+import ex91solution.VideoDaoSearch;
+
 
 public class VideoDaoSearchTest {
 
