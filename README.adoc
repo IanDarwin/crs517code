@@ -17,7 +17,8 @@ as we did yesterday for the jpademo project. Make sure "import projects" is chec
 	Check the output in the Console window for a line like:
 	Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 
-	Note: Seems you can't run the Unit tests under the Eclipse JUnit runner due to a version conflict.
+	Note: You may not be able to run the Unit tests under the Eclipse JUnit runner until
+	you have run them once under Maven.
 
 3. Open the file src/main/java/ex91/VideoDaoSearch.java.
 
