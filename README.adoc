@@ -16,9 +16,11 @@ as we did yesterday for the jpademo project. Make sure "import projects" is chec
 
 . To ensure that tests work in the initial state of the project, right click on the project
 in the Package Explorer and select Run As -> Maven Test.
-Check the output in the Console window for a line like:
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
-Note: You may be able to run the Unit tests under the Eclipse JUnit runner 
+Check the output in the Console window for a line like the following.
+Or run the tests directly in Eclipse. Either way you should get no failures.
+
+	Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
 instead of under Maven.
 
 .	Open the file src/main/java/ex91/VideoDaoSearch.java
