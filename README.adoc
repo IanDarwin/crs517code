@@ -6,7 +6,8 @@ Stuff for Course 517 only.
 An exercise on the Criteria Query. Note that the API is now deprecated
 in favor of the JPA Criteria Query, as Hibernate
 continues to morph itself into a JPA implementation.
-But we'll use the one in the course notes for the time being.
+For an example of the JPA way, see the example in the https://github.com/IanDarwin/jpademo[jpademo project],
+in src/main/java/jpa/features/CriteriaQueryExample.java.
 
 . Use Eclipse to download this project from https://github.com/IanDarwin/crs517add,
 as we did yesterday for the jpademo project. Make sure "import projects" is checked.
