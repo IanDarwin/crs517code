@@ -21,8 +21,6 @@ Or run the tests directly in Eclipse. Either way you should get no failures.
 
 	Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 
-instead of under Maven.
-
 .	Open the file src/main/java/ex91/VideoDaoSearch.java
 Be careful NOT to open the version in ex91solution!
 Complete the TODO steps in this file.
