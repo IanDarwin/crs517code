@@ -20,17 +20,19 @@ as we did yesterday for the jpademo project. Make sure "import projects" is chec
 	Note: You may be able to run the Unit tests under the Eclipse JUnit runner 
 	instead of under Maven.
 
-3. Open the file src/main/java/ex91/VideoDaoSearch.java.
+3.	Open the file src/main/java/ex91/VideoDaoSearch.java
 
-   Complete the TODO steps in this file.
+	Be careful NOT to open the version in ex91solution!
 
-4. Open the file src/test/java/VideoDaoSearchTest.java
+	Complete the TODO steps in this file.
+
+4.	Open the file src/test/java/VideoDaoSearchTest.java
 	Note that this file initially tests the solution version (which passes).
 	You need to change it to test YOUR version of the code (which we hope will pass too!).
 
 	Complete one TODO step in this file.
 
-5. Run the Maven Test again to ensure that your code passes. If not, resolve any issues.
+5.	Run the Maven Test again to ensure that your code passes. If not, resolve any issues.
 	Lather. Rinse. Repeat
 
 --STOP-- This is the end of the exercise.
