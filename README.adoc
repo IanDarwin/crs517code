@@ -3,36 +3,39 @@ Stuff for Course 517 only.
 
 == ex91 Bonus
 
-An exercise on the Criteria Query. Note that the API is now deprecated in favor of the JPA Criteria Query, as Hibernate
+An exercise on the Criteria Query. Note that the API is now deprecated
+in favor of the JPA Criteria Query, as Hibernate
 continues to morph itself into a JPA implementation.
 
-1. Use Eclipse to download this project from https://github.com/IanDarwin/crs517add,
+# Use Eclipse to download this project from https://github.com/IanDarwin/crs517add,
 as we did yesterday for the jpademo project. Make sure "import projects" is checked.
 
-2. Open the new "crs571add" project.
+# Open the new "crs571add" project.
 
-3. To ensure that tests work in the initial state of the project, right click on the project
-	in the Package Explorer and select Run As -> Maven Test.
+# To ensure that tests work in the initial state of the project, right click on the project
+in the Package Explorer and select Run As -> Maven Test.
 
-	Check the output in the Console window for a line like:
-	Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+Check the output in the Console window for a line like:
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 
-	Note: You may be able to run the Unit tests under the Eclipse JUnit runner 
-	instead of under Maven.
+Note: You may be able to run the Unit tests under the Eclipse JUnit runner 
+instead of under Maven.
 
-3.	Open the file src/main/java/ex91/VideoDaoSearch.java
+#	Open the file src/main/java/ex91/VideoDaoSearch.java
 
-	Be careful NOT to open the version in ex91solution!
+Be careful NOT to open the version in ex91solution!
 
-	Complete the TODO steps in this file.
+Complete the TODO steps in this file.
 
-4.	Open the file src/test/java/VideoDaoSearchTest.java
-	Note that this file initially tests the solution version (which passes).
-	You need to change it to test YOUR version of the code (which we hope will pass too!).
+#	Open the file src/test/java/VideoDaoSearchTest.java
+Note that this file initially tests the solution version (which passes).
+You need to change it to test YOUR version of the code (which we hope will pass too!).
 
-	Complete one TODO step in this file.
+Complete the one and only TODO step in this file. In Eclipse yo may need
+to expand the imports (click the tiny + before the one
+import that is showing) to see the TODO instruction.
 
-5.	Run the Maven Test again to ensure that your code passes. If not, resolve any issues.
-	Lather. Rinse. Repeat
+#	Run the Maven Test again to ensure that your code passes. If not, resolve any issues.
+Lather. Rinse. Repeat
 
 --STOP-- This is the end of the exercise.
