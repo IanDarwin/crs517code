@@ -1,38 +1,12 @@
 = crs517add
 Stuff for Course 517 only.
 
+== ex61 Done Right
+
+A version of Ex61 done with Spring Annotations; nary a trace of th'olde
+vintage legacy XML to be seen.
+
 == ex91 Bonus
 
 An exercise on the Criteria Query. Note that the API is now deprecated
-in favor of the JPA Criteria Query, as Hibernate
-continues to morph itself into a JPA implementation.
-For an example of the JPA way, see the example in the https://github.com/IanDarwin/jpademo[jpademo project],
-in src/main/java/jpa/features/CriteriaQueryExample.java.
-
-. Use Eclipse to download this project from https://github.com/IanDarwin/crs517add,
-as we did yesterday for the jpademo project. Make sure "import projects" is checked.
-
-. Open the new "crs571add" project.
-
-. To ensure that tests work in the initial state of the project, right click on the project
-in the Package Explorer and select Run As -> Maven Test.
-Check the output in the Console window for a line like the following.
-Or run the tests directly in Eclipse. Either way you should get no failures.
-
-	Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
-
-.	Open the file src/main/java/ex91/VideoDaoSearch.java
-Be careful NOT to open the version in ex91solution!
-Complete the TODO steps in this file.
-
-.	Open the file src/test/java/VideoDaoSearchTest.java
-Note that this file initially tests the solution version (which passes).
-You need to change it to test YOUR version of the code (which we hope will pass too!).
-Complete the one and only TODO step in this file. In Eclipse you may need
-to expand the imports (click the tiny + before the one
-import that is showing) to see the TODO instruction.
-
-.	Run the Maven Test again to ensure that your code passes. If not, resolve any issues.
-Lather. Rinse. Repeat
-
---STOP-- This is the end of the exercise.
+in favor of the JPA Criteria Query.

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.darwinsys</groupId>
+	<artifactId>ex61</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<inceptionYear>2015</inceptionYear>
+
+	<name>crs517 exercise 6.1</name>
+	<url>https://learningtree.com/517</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<javase.version>11</javase.version>
+		<javaee.version>8.0</javaee.version>
+		<maven.compiler.source>${javase.version}</maven.compiler.source>
+		<maven.compiler.target>${javase.version}</maven.compiler.target>
+		<maven.compiler.testSource>${javase.version}</maven.compiler.testSource>
+		<maven.compiler.testTarget>${javase.version}</maven.compiler.testTarget>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<build.plugins.plugin.version>1.0.1</build.plugins.plugin.version>
+	</properties>
+
+	<dependencies>
+
+		<!-- Java EE API -->
+		<dependency>
+			<groupId>javax</groupId>    
+			<artifactId>javaee-web-api</artifactId>    
+			<version>${javaee.version}</version>  
+			<scope>provided</scope>
+		</dependency> 
+
+		<!-- Spring MVC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>5.2.3.RELEASE</version>
+		</dependency>
+
+		<!-- Database driver for test -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.185</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>(4.8,5.0)</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+
+			<!-- Java EE AppServer: WildFly (JBoss) -->
+			<plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>1.0.2.Final</version>
+			</plugin>
+
+			<!-- Java EE AppServer: GlassFish (see https://maven-glassfish-plugin.java.net/usage.html) -->
+			<plugin>
+				<groupId>org.glassfish.maven.plugin</groupId>
+				<artifactId>maven-glassfish-plugin</artifactId>
+				<version>2.1</version>
+			</plugin>
+
+			<!-- Java EE AppServer: Apache TomEE (see http://tomee.apache.org/tomee-maven-plugin.html) -->
+			<plugin>
+				<groupId>org.apache.openejb.maven</groupId>
+				<artifactId>tomee-maven-plugin</artifactId>
+				<version>1.7.1</version>
+				<configuration>
+					<tomeeVersion>1.7.1</tomeeVersion>
+					<tomeeClassifier>plus</tomeeClassifier>
+				</configuration>
+			</plugin>
+
+			<!-- Java EE Web Container: Apache Tomcat (http://tomcat.apache.org/maven-plugin.html) -->
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+			</plugin>
+
+		</plugins>
+	</build>
+
+</project>
