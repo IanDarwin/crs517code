@@ -1,3 +1,5 @@
 = crs517 ex61 via annotations
 
-THIS PROJECT HAS BEEN MOVED INTO crs517add AND WILL BE DELETED SOON
+We re-did ex61 with Spring annotations for config and everything.
+
+The only legacy XML that remains is web.xml for Java EE and jboss-web.xml for Wildfly.
