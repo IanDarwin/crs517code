@@ -5,6 +5,9 @@ Stuff for Course 517 only.
 
 A version of Ex61 done with Spring Annotations; nary a trace of th'olde
 vintage legacy XML to be seen.
+Well, other than web.xml. 
+And a jboss-web.xml for deployment.
+But no Spring XML.
 
 == ex91 Bonus
 
